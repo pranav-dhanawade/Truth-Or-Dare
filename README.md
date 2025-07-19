@@ -25,5 +25,5 @@ A simple and fun **Truth or Dare** game in the command-line, built using Python.
 
 1. Clone this repository or copy the `.py` file:
    ```bash
-   git clone https://github.com/your-username/truth-or-dare-python.git
+   git clone https://github.com/pranav-dhanawade/Truth-Or-Dare.git
    cd truth-or-dare-python
