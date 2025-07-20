@@ -34,6 +34,8 @@ def playAgain(choice):
 
     
 def choose(challenge):
+    requestTruth = requests.get("https://api.truthordarebot.xyz/v1/truth")
+    requestDare = requests.get("https://api.truthordarebot.xyz/api/dare")
     match challenge:
         case 'Truth'  |  'truth':
             if requestTruth.status_code==200:
@@ -56,8 +58,7 @@ def game(name):
     
 
 
-requestTruth = requests.get("https://api.truthordarebot.xyz/v1/truth")
-requestDare = requests.get("https://api.truthordarebot.xyz/api/dare")
+
 playerList = []
 print("\n\nWelcome In Truth Or Dare\n\n")
 addPlayers(playerList)
